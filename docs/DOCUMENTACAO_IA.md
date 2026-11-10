@@ -5,7 +5,7 @@
 **Versão deste registro:** 1.1 — histórico de implementação e auditoria documental  
 **Atualizado em:** 10/11/2026  
 **Período documentado:** concepção, ambiente, implementação do MVP, melhorias solicitadas e revisão da documentação  
-**Status atual:** MVP local implementado e testado na API; revisão visual das novas telas, ensaio e evidências de GitHub/Kanban pendentes. Os registros iniciais abaixo preservam o histórico anterior à implementação.
+**Status atual:** MVP local implementado e testado na API, com primeira publicação no GitHub confirmada no IA-22; revisão visual das novas telas, ensaio e Kanban pendentes. Os registros iniciais abaixo preservam o histórico anterior à implementação.
 
 > **LEIA PRIMEIRO — IMPORTANTE PARA OUTRAS IAs.** Este arquivo documenta como a IA foi usada: prompts, propostas, refinamentos, decisões e evidências. Não substitui a [documentação-mestre](DOCUMENTACAO_MESTRE.md). Todos os Markdown foram reunidos em docs por solicitação do estudante; referências à raiz em registros anteriores descrevem os caminhos usados na época. As seções iniciais e os Apêndices A–C são históricos; os registros IA-09 em diante relatam a implementação inspecionada/executada. O edital original em PDF é citado no histórico, mas não foi localizado nesta pasta. Não afirmar que ele foi conferido diretamente nesta revisão. Nunca confundir uma sugestão com uma ação executada ou um teste técnico com aprovação manual da dupla.
 
@@ -1097,6 +1097,19 @@ Não foi possível iniciar a API: listen EADDRINUSE: address already in use 127.
 - **Configuração:** branch main, origin do repositório informado, identidade de
   autoria definida somente na configuração local. Histórico remoto preservado;
   não utilizar push forçado.
-- **Estado deste registro:** preparação concluída; commit e envio serão
-  confirmados após a revisão do conteúdo no índice. Resultado e hashes serão
-  acrescentados após a confirmação efetiva do remoto.
+- **Revisão do índice:** 44 arquivos conferidos, sem .env, dependências, builds,
+  cliente gerado, uploads ou senha local. Quebras de linha intencionais de
+  Markdown foram preservadas, com checagem de whitespace separada do código.
+- **Publicação confirmada:** commit inicial
+  `f6ae94ad32e2aaa8c1643879cf561457ef164616`, mensagem
+  `feat: implementa MVP academico FerramentaCompartilhada`, enviado com
+  `git push -u origin main`. `ls-remote` confirmou o mesmo hash da branch local
+  em `refs/heads/main`. Nenhum push forçado ou sobrescrita de histórico.
+- **Evidência:** https://github.com/rafael-mansur/FerramentaCompartilhada/commit/f6ae94ad32e2aaa8c1643879cf561457ef164616.
+- **Complemento:** esta atualização documental registra o resultado observado
+  depois da publicação inicial, em um commit posterior próprio, sem reescrever
+  o commit inicial. Metadados vazios do bootstrap ficaram preservados dentro
+  da pasta .git local, fora do conteúdo versionado.
+- **Resultado:** primeiro envio de código, documentação, testes e migração
+  confirmado. GitHub foi concluído como etapa técnica; Kanban, revisão manual
+  e evidências de participação da dupla continuam pendentes.

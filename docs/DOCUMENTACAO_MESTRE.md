@@ -471,7 +471,8 @@ A API responde com JSON no prefixo `/api`. A identidade demo vem do header `x-us
 **Leitura desta seção:** as etapas abaixo preservam o plano inicial. O estado atual por marco é: ambiente/banco implementados; catálogo/anúncios/reservas implementados com testes de API; acabamento visual e ensaio ainda pendentes; GitHub/Kanban e revisão acadêmica da dupla não comprovados. Os dois parágrafos “Status em 10/11” abaixo são checkpoints anteriores à implementação. Nenhum commit foi realizado pela IA; commits futuros dependem de autorização.
 
 O plano adotou desenvolvimento incremental, com entregas verificáveis e testes.
-Commits representam marcos quando autorizados; não foram executados pela IA.
+Commits representam marcos quando autorizados; a publicação inicial foi
+expressamente autorizada e confirmada no IA-22.
 O plano inicial abaixo deve ser lido junto ao estado atual, não como evidência
 de que todas as atividades de gestão já foram realizadas.
 
@@ -759,7 +760,7 @@ como lista atual de tarefas.
 |---|---|
 | Revisão manual da interface e código | Dupla executa o roteiro e registra cenário, data, resultado e correções em TESTES.md. |
 | Responsáveis e contribuições | Informar nomes e atividades efetivas de cada integrante; a divisão da seção 13.1 é proposta. |
-| Git/GitHub | URL conferida e Git local vinculado; publicação autorizada, registrada no IA-22. Manter commits futuros correspondentes a mudanças reais. |
+| Git/GitHub | Primeiro envio confirmado em main, commit f6ae94a e evidência no IA-22. Manter commits futuros correspondentes a mudanças reais. |
 | Kanban | Organizar tarefas reais e evidências do quadro; não simular datas nem um histórico que não ocorreu. |
 | Ensaio e persistência completa | Executar roteiro com reserva e reiniciar todos os processos sem remover volume; registrar resultado. |
 | Edital/prazo | PDF original não localizado no projeto; conferir os requisitos oficiais e a orientação atual com o professor. |

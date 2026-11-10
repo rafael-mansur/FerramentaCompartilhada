@@ -71,8 +71,10 @@ Não foi encontrado repositório Git local nesta pasta na inspeção inicial.
 Posteriormente, o estudante autorizou publicar o projeto. O Git local foi
 inicializado na branch `main`, com remoto
 [rafael-mansur/FerramentaCompartilhada](https://github.com/rafael-mansur/FerramentaCompartilhada),
-conferido vazio antes do envio. A publicação e suas verificações estão registradas
-no IA-22 em DOCUMENTACAO_IA.md. Não foi fabricado histórico retroativo de commits.
+conferido vazio antes do envio. O primeiro envio foi confirmado no commit
+[`f6ae94a`](https://github.com/rafael-mansur/FerramentaCompartilhada/commit/f6ae94ad32e2aaa8c1643879cf561457ef164616).
+A publicação e suas verificações estão registradas no IA-22 em DOCUMENTACAO_IA.md.
+Não foi fabricado histórico retroativo de commits.
 
 ## Executar a API no Windows
 
@@ -454,6 +456,6 @@ Os comandos de execução continuam sendo executados na raiz, backend ou fronten
 conforme indicado; mover a documentação não altera a execução da aplicação.
 
 Os próximos passos são revisar as telas manualmente, executar o roteiro de
-demonstração e organizar as evidências acadêmicas de GitHub e Kanban.
+demonstração e organizar o Kanban e as evidências de participação da dupla.
 Kanban e confirmação do prazo acadêmico
 continuam pendentes conforme a documentação-mestre.

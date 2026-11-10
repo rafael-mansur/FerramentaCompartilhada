@@ -4,8 +4,8 @@
 
 O núcleo do protótipo local está implementado: anúncios, catálogo, filtros,
 reservas, decisões do proprietário e persistência. Testes de API e build passaram.
-A revisão visual das novas telas, o ensaio e as evidências de GitHub/Kanban
-continuam pendentes. Não apresentar esses itens como concluídos.
+A primeira publicação no GitHub foi confirmada no registro IA-22. A revisão
+visual das novas telas, o ensaio e o Kanban continuam pendentes.
 
 ## Preparar antes de apresentar
 
@@ -62,8 +62,9 @@ O status muda para Cancelada e o período fica livre para aprovar outro pedido.
 
 - Revisar as novas telas no navegador, inclusive largura de celular.
 - Guardar resultados do ensaio e capturas de telas, sem dados reais.
-- Confirmar URL/histórico do GitHub e organizar versionamento com autorização
-  antes de qualquer commit ou push. Não inventar commits retroativos.
+- GitHub publicado em `https://github.com/rafael-mansur/FerramentaCompartilhada`,
+  branch main. Mostrar commits reais; novas alterações devem ter commits
+  correspondentes e autorização para envio. Não inventar commits retroativos.
 - Retomar o Kanban exigido no edital, registrando tarefas realmente executadas;
   sua organização pode ser manual, sem outra integração técnica.
 - Confirmar com o professor a situação do prazo original e a entrega esperada.
