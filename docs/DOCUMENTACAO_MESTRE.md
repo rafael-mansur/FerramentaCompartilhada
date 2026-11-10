@@ -3,7 +3,7 @@
 **Subtítulo:** Especificação funcional e técnica, registro das decisões, plano de desenvolvimento e contexto para agentes de IA  
 **Versão:** 1.3 — documentação consolidada e rastreabilidade do MVP  
 **Atualização:** 10/11/2026  
-**Situação atual verificada em 10/11/2026:** MVP local implementado com anúncios, categoria digitada, upload de capa, catálogo, filtros, perfis demo, reservas e decisões do proprietário, incluindo cancelamento de aprovadas por ambos os participantes. Dezoito testes aprovados e build React concluído. Revisão visual das novas telas, ensaio completo e evidências de GitHub/Kanban pendentes. Consulte `TESTES.md` e `ROTEIRO_APRESENTACAO.md` nesta pasta. Os checkpoints históricos abaixo descrevem o estado anterior à implementação.  
+**Situação atual verificada em 10/11/2026:** MVP local implementado com anúncios, categoria digitada, upload de capa, catálogo, filtros, perfis demo, reservas e decisões do proprietário, incluindo cancelamento de aprovadas por ambos os participantes. Dezoito testes aprovados e build React concluído. Revisão visual das novas telas, ensaio completo e evidências de GitHub/Kanban pendentes. Consulte `TESTES.md` nesta pasta. Os checkpoints históricos abaixo descrevem o estado anterior à implementação.  
 **Disciplina:** Laboratório de Programação, Ciência da Computação, UNIFACVEST   
 
 
@@ -424,8 +424,7 @@ FerramentaCompartilhada/
 │   ├── DOCUMENTACAO_IA.md
 │   ├── README.md
 │   ├── AGENTS.md
-│   ├── TESTES.md
-│   └── ROTEIRO_APRESENTACAO.md
+│   └── TESTES.md
 ├── docker-compose.yml
 └── .gitignore
 ```
@@ -758,7 +757,7 @@ como lista atual de tarefas.
 
 | Pendência real | Como fechar sem inventar evidências |
 |---|---|
-| Revisão manual da interface e código | Dupla executa o roteiro e registra cenário, data, resultado e correções em TESTES.md. |
+| Revisão manual da interface e código | Dupla executa o checklist de TESTES.md e registra cenário, data, resultado e correções. |
 | Responsáveis e contribuições | Informar nomes e atividades efetivas de cada integrante; a divisão da seção 13.1 é proposta. |
 | Git/GitHub | Primeiro envio confirmado em main, commit f6ae94a e evidência no IA-22. Manter commits futuros correspondentes a mudanças reais. |
 | Kanban | Organizar tarefas reais e evidências do quadro; não simular datas nem um histórico que não ocorreu. |
@@ -844,7 +843,6 @@ estão em [database.test.js](../backend/test/database.test.js), e inicializaçã
 | Este documento | Requisitos, escopo, modelo, arquitetura, decisões, rastreabilidade e limites da entrega. |
 | `DOCUMENTACAO_IA.md` | Prompts reais, iterações, erros, correções, decisões e testes associados ao uso da IA. |
 | `TESTES.md` | Resultados observados, cobertura, limitações e validações pendentes. |
-| `ROTEIRO_APRESENTACAO.md` | Preparação, demonstração em dez minutos e fechamento acadêmico. |
 | `AGENTS.md` | Instruções operacionais para agentes; não substitui os requisitos nem o relatório da dupla. |
 
 **Fim da especificação v1.3.** Revisão documental em 10/11/2026. Não considerar

@@ -41,8 +41,7 @@ Ferramenta e Reserva. A rota `GET /api/health/db` testa a conexão PostgreSQL.
 O seed inclui dois perfis fictícios, quatro categorias e três anúncios ilustrativos.
 O fluxo de anúncios e reservas está implementado e validado por testes de API.
 A revisão manual das novas telas e o ensaio da apresentação ainda estão pendentes.
-Consulte [o roteiro de apresentação](ROTEIRO_APRESENTACAO.md) e
-[a matriz de verificação](TESTES.md).
+Consulte [a matriz de verificação e o checklist manual](TESTES.md).
 
 ## Ambiente verificado em 10/11/2026
 
@@ -444,7 +443,6 @@ registrado no IA-22. Kanban e revisão acadêmica da dupla continuam pendentes.
 | [Documentação-mestre](DOCUMENTACAO_MESTRE.md) | Requisitos, arquitetura, dados, decisões, rastreabilidade e estado atual. |
 | [Registro de uso da IA](DOCUMENTACAO_IA.md) | Prompts reais, iterações, erros, correções e critérios de aceitação técnica. |
 | [Testes](TESTES.md) | Resultados e limites da verificação; validações manuais pendentes. |
-| [Roteiro de apresentação](ROTEIRO_APRESENTACAO.md) | Preparar a demonstração e conferir pendências acadêmicas. |
 | [AGENTS.md](AGENTS.md) | Orientar agentes que forem trabalhar nos arquivos. |
 
 Evite manter cópias divergentes dos requisitos: a documentação-mestre é a
@@ -455,7 +453,7 @@ Todos os Markdown do projeto ficam em `docs/`, por solicitação do estudante.
 Os comandos de execução continuam sendo executados na raiz, backend ou frontend
 conforme indicado; mover a documentação não altera a execução da aplicação.
 
-Os próximos passos são revisar as telas manualmente, executar o roteiro de
-demonstração e organizar o Kanban e as evidências de participação da dupla.
+Os próximos passos são revisar as telas com o checklist manual de TESTES.md
+e organizar o Kanban e as evidências de participação da dupla.
 Kanban e confirmação do prazo acadêmico
 continuam pendentes conforme a documentação-mestre.

@@ -65,8 +65,8 @@ O controle automatizado do Chrome foi interrompido pela ferramenta porque não
 conseguiu determinar a URL atual com confiança para aplicar sua política.
 Nenhum novo fluxo visual foi declarado aprovado a partir dessa tentativa.
 
-Para concluir a validação manual: seguir `ROTEIRO_APRESENTACAO.md`, conferir
-carregamento, estados vazios, mensagens de erro, troca de perfil, edição,
+Para concluir a validação manual: usar o checklist ao final deste documento e
+conferir carregamento, estados vazios, mensagens de erro, troca de perfil, edição,
 reserva, decisões e tamanho de celular. Registrar data e resultado após executar.
 
 ## Testes técnicos de interrupção — 10/11/2026

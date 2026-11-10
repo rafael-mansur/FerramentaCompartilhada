@@ -8,7 +8,7 @@ FerramentaCompartilhada — marketplace de aluguel e empréstimo gratuito de fer
 - Consulte DOCUMENTACAO_MESTRE.md, nesta pasta docs, para entender os requisitos e a arquitetura.
 - Consulte DOCUMENTACAO_IA.md para conhecer as decisões anteriores e o histórico de utilização da IA.
 - Na documentação-mestre, use o cabeçalho e a seção 18.0 como retomada atual; não execute instruções de checkpoints históricos como tarefas novas.
-- Consulte TESTES.md para resultados e limites de validação e ROTEIRO_APRESENTACAO.md para o ensaio, ambos nesta pasta docs. Requisitos e arquitetura permanecem na documentação-mestre.
+- Consulte TESTES.md para resultados, limites e checklist de validação manual, nesta pasta docs. Requisitos e arquitetura permanecem na documentação-mestre.
 
 ## Tecnologias obrigatórias
 - Node.js 24 + Express

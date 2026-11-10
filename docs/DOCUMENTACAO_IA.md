@@ -1113,3 +1113,24 @@ Não foi possível iniciar a API: listen EADDRINUSE: address already in use 127.
 - **Resultado:** primeiro envio de código, documentação, testes e migração
   confirmado. GitHub foi concluído como etapa técnica; Kanban, revisão manual
   e evidências de participação da dupla continuam pendentes.
+
+### Registro IA-23 — Remoção do roteiro de apresentação
+
+- **Data:** 2026-11-10.
+- **Prompt exato enviado pelo estudante:**
+  > pode remover o roteiro de apresentacao, tanto do projeto quanto do github
+- **Alteração autorizada:** removido `docs/ROTEIRO_APRESENTACAO.md`; mapas,
+  links, árvore e orientações atuais dos demais documentos foram ajustados.
+  O checklist de verificação permanece em TESTES.md. Não foi criado outro
+  arquivo para substituir o roteiro.
+- **Histórico:** menções em registros anteriores da IA são preservadas para
+  documentar o que ocorreu. A exclusão será publicada por commit normal na
+  main, sem reescrever ou apagar o histórico anterior do repositório.
+- **Verificação:** Git estava limpo antes da alteração; checagem dos links
+  locais após a remoção e revisão do diff. Código, dependências e banco não
+  foram alterados; testes funcionais não repetidos para esta mudança documental.
+- **Arquivos alterados:** `docs/AGENTS.md`, `docs/README.md`,
+  `docs/TESTES.md`, `docs/DOCUMENTACAO_MESTRE.md` e `docs/DOCUMENTACAO_IA.md`;
+  removido `docs/ROTEIRO_APRESENTACAO.md`.
+- **Publicação:** remoção preparada para commit e push expressamente autorizados
+  pelo pedido; confirmação do remoto será feita antes de encerrar a tarefa.
