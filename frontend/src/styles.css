@@ -1,0 +1,94 @@
+:root {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #20382f;
+  background: #f6f8f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+.page { max-width: 1120px; padding: 0 36px; margin: auto; }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 28px 0; border-bottom: 1px solid #dce5dc; }
+.brand { color: inherit; display: flex; align-items: center; gap: 12px; text-decoration: none; font-size: 18px; font-weight: 700; }
+.brand-accent { color: #176348; }
+.brand-mark { display: grid; place-items: center; flex-shrink: 0; width: 42px; height: 42px; background: #176348; border-radius: 12px; color: white; font-size: 15px; }
+.demo-label { font-size: 12px; border: 1px solid #ccd9ce; border-radius: 30px; padding: 7px 12px; white-space: nowrap; }
+.intro { padding: 64px 0 38px; max-width: 750px; }
+.eyebrow { color: #476452; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 14px; }
+h1 { font-size: clamp(40px, 5.7vw, 66px); line-height: 1.09; letter-spacing: -.045em; margin: 0 0 22px; font-weight: 750; }
+h1 span { color: #176348; }
+.lead { max-width: 650px; color: #56655c; font-size: 18px; line-height: 1.7; margin: 0; }
+button { flex-shrink: 0; border: 1px solid #176348; border-radius: 8px; background: #176348; color: white; padding: 12px 18px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+button:hover:not(:disabled) { background: #104d37; }
+button:disabled { opacity: .6; cursor: wait; }
+:focus-visible { outline: 3px solid #9b6c23; outline-offset: 4px; }
+.upcoming { padding: 44px 0 50px; }
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.section-heading h2 { font-size: 21px; margin: 0; }
+.section-heading > span { font-size: 12px; color: #56655c; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+article { border-top: 2px solid #d5dfd3; padding: 22px 4px 0; }
+.card-number { font-size: 12px; color: #476452; font-weight: 700; }
+article h3 { font-size: 17px; margin: 12px 0 9px; }
+article p { margin: 0; font-size: 14px; line-height: 1.7; color: #56655c; }
+footer { border-top: 1px solid #dce5dc; padding: 22px 0; font-size: 12px; color: #56655c; }
+
+input, select, textarea { width: 100%; min-height: 42px; padding: 10px; border: 1px solid #b8cbbd; border-radius: 7px; background: white; color: #20382f; font: inherit; font-size: 14px; }
+label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; }
+.profile { width: 210px; flex-shrink: 0; }
+.tabs { display: flex; flex-wrap: wrap; gap: 9px; margin: 30px 0 22px; }
+.secondary { color: #176348; background: transparent; }
+button.secondary:hover:not(:disabled) { color: white; }
+.workspace { padding-bottom: 44px; min-height: 260px; }
+.workspace h2 { font-size: 25px; margin-top: 0; }
+.notice { border: 1px solid #bfd9c4; border-radius: 8px; padding: 14px; background: #e8f4e9; line-height: 1.6; }
+.notice-error { background: #fff0e9; color: #863b21; border-color: #e4c2ac; }
+.empty { padding: 25px; background: white; border-radius: 10px; line-height: 1.7; }
+.filters { display: grid; grid-template-columns: 1.4fr 1.2fr 1fr 1fr auto; align-items: end; gap: 12px; margin: 24px 0; }
+.tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.tool-card { padding: 0; border: 1px solid #d6e0d6; border-radius: 12px; background: white; overflow: hidden; }
+.tool-card img { width: 100%; height: 180px; object-fit: cover; }
+.tool-content { padding: 20px; }
+.tool-content h3 { margin: 0 0 9px; font-size: 20px; }
+.tool-content button { width: 100%; margin-top: 18px; }
+.price { font-size: 18px; font-weight: 700; color: #176348; margin: 16px 0 !important; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 820px; margin-top: 24px; }
+.cover-preview img { width: 100%; max-width: 360px; height: 220px; object-fit: contain; border-radius: 12px; background: #e2ebe0; border: 1px solid #d6e0d6; }
+.full { grid-column: 1 / -1; }
+.detail { display: grid; grid-template-columns: 1fr 1.25fr; gap: 35px; }
+.detail-image { width: 100%; border-radius: 15px; }
+.description { white-space: pre-wrap; line-height: 1.7; }
+.booking { display: grid; gap: 14px; padding: 22px; background: white; border-radius: 12px; }
+.booking p { margin: 0; }
+.muted { font-size: 13px; color: #56655c; line-height: 1.7; }
+.back { margin-bottom: 24px; }
+.list { display: flex; flex-direction: column; gap: 16px; }
+.list-item { padding: 24px; border: 1px solid #d6e0d6; background: white; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.list-item h3 { margin: 10px 0; }
+.list-item p { margin: 6px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; flex-shrink: 0; }
+.badge { font-size: 12px; font-weight: 700; padding: 5px 9px; border-radius: 20px; display: inline-block; background: #edf1ed; }
+.badge-aprovada { background: #d8efdf; color: #185d36; }
+.badge-pendente { background: #fff0c8; color: #76581b; }
+.badge-recusada, .badge-cancelada { background: #f5e4de; color: #863b21; }
+.address { padding-top: 10px; font-size: 13px; }
+
+@media (max-width: 700px) {
+  .page { padding: 0 20px; }
+  .header { flex-wrap: wrap; padding: 20px 0; gap: 12px; }
+  .brand { font-size: 15px; gap: 8px; }
+  .brand-mark { width: 34px; height: 34px; font-size: 12px; }
+  .intro { padding-top: 40px; }
+  .lead { font-size: 16px; }
+  .section-heading { align-items: flex-start; flex-direction: column; }
+  .cards { grid-template-columns: 1fr; gap: 24px; }
+  .profile { width: 100%; }
+  .filters { grid-template-columns: 1fr 1fr; }
+  .tool-grid, .detail, .form-grid { grid-template-columns: 1fr; }
+  .list-item { align-items: stretch; flex-direction: column; }
+  .actions { flex-shrink: 1; }
+  .tabs button { flex-grow: 1; white-space: normal; }
+}

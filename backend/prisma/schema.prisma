@@ -1,0 +1,87 @@
+generator client {
+  provider               = "prisma-client"
+  output                 = "../src/generated/prisma"
+  moduleFormat           = "esm"
+  generatedFileExtension = "ts"
+  importFileExtension    = "ts"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Modalidade {
+  ALUGUEL
+  EMPRESTIMO
+}
+
+enum StatusReserva {
+  PENDENTE
+  APROVADA
+  RECUSADA
+  CANCELADA
+  CONCLUIDA
+}
+
+model Usuario {
+  id          Int          @id @default(autoincrement())
+  nome        String
+  email       String       @unique
+  bairro      String?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  ferramentas Ferramenta[]
+  reservas    Reserva[]
+}
+
+model Categoria {
+  id          Int          @id @default(autoincrement())
+  nome        String       @unique
+  descricao   String?
+  ferramentas Ferramenta[]
+}
+
+model Ferramenta {
+  id             Int        @id @default(autoincrement())
+  titulo         String
+  descricao      String
+  categoriaId    Int
+  proprietarioId Int
+  modalidade     Modalidade
+  precoDiaria    Decimal?   @db.Decimal(10, 2)
+  imagemUrl      String
+  cep            String
+  logradouro     String
+  numero         String
+  bairro         String
+  cidade         String
+  uf             String     @db.VarChar(2)
+  complemento    String?
+  ativa          Boolean    @default(true)
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+  categoria      Categoria  @relation(fields: [categoriaId], references: [id], onDelete: Restrict)
+  proprietario   Usuario    @relation(fields: [proprietarioId], references: [id], onDelete: Restrict)
+  reservas       Reserva[]
+
+  @@index([categoriaId])
+  @@index([proprietarioId])
+}
+
+model Reserva {
+  id            Int           @id @default(autoincrement())
+  ferramentaId  Int
+  solicitanteId Int
+  dataRetirada  DateTime      @db.Date
+  dataDevolucao DateTime      @db.Date
+  diarias       Int
+  valorTotal    Decimal       @db.Decimal(10, 2)
+  status        StatusReserva @default(PENDENTE)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  ferramenta    Ferramenta    @relation(fields: [ferramentaId], references: [id], onDelete: Restrict)
+  solicitante   Usuario       @relation(fields: [solicitanteId], references: [id], onDelete: Restrict)
+
+  @@index([ferramentaId, status, dataRetirada, dataDevolucao])
+  @@index([solicitanteId])
+}
